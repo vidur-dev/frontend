@@ -1,7 +1,14 @@
 module.exports = {
   purge: [],
   theme: {
-    extend: {}
+    extend: {
+      width: {
+        'viewport': '100vw'
+      },
+      height: {
+        'viewport': '100vh'
+      }
+    }
   },
   variants: {},
   plugins: [
