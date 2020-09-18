@@ -1,21 +1,21 @@
+const nord = require('tailwind-nord');
+
 module.exports = {
   purge: [],
   theme: {
     extend: {
       width: {
-        'viewport': '100vw'
+        viewport: '100vw',
       },
       height: {
-        'viewport': '100vh'
-      }
-    }
+        viewport: '100vh',
+      },
+    },
   },
   variants: {},
-  plugins: [
-    require('tailwind-nord')
-  ],
+  plugins: [nord],
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
-  }
-}
+    purgeLayersByDefault: true,
+  },
+};
