@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint:css": "stylelint **/*.css **/*.scss",
+    "lint:js": "eslint --cache *.js pages/*.js"
   },
   "dependencies": {
     "next": "9.5.3",
