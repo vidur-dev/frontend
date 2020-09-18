@@ -25,12 +25,7 @@ export default function About() {
       </div>
 
       <p className={styles.text}>
-        This is the personal website of Vidur Butalia, a web developer and
-        all-around geek from New Delhi, India. <br />
-        My interests include technology & programming, video games, history,
-        music and political economy. <br />
-        I produce beautiful web sites, simple and effective code, empty beer
-        cans and invective. <br />
+        This is the personal website of Vidur Butalia.
       </p>
     </main>
   );
