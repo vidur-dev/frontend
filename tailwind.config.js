@@ -1,4 +1,6 @@
 const nord = require('tailwind-nord');
+const aspectRatios = require('tailwindcss-aspect-ratio');
+const typography = require('@tailwindcss/typography');
 
 module.exports = {
   purge: [],
@@ -13,7 +15,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [nord],
+  plugins: [nord, aspectRatios, typography],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
