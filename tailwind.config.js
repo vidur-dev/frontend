@@ -9,7 +9,11 @@ module.exports = {
     aspectRatio: {
       a4: [210, 297],
     },
-    extend: {},
+    extend: {
+      screens: {
+        print: { raw: 'print' },
+      },
+    },
   },
   variants: {},
   plugins: [nord, aspectRatios, typography, customForms],
