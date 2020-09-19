@@ -10,6 +10,7 @@
     "lint:js": "eslint --cache *.js pages/*.js"
   },
   "dependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
     "@tailwindcss/typography": "^0.2.0",
     "next": "9.5.3",
     "react": "16.13.1",
@@ -23,6 +24,7 @@
     "eslint": "^7.9.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-compat": "^3.8.0",
     "eslint-plugin-html": "^6.1.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
@@ -39,6 +41,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0",
+    "stylelint-no-unsupported-browser-features": "^4.0.0",
     "stylelint-prettier": "^1.1.2"
   },
   "husky": {
@@ -48,6 +51,11 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix"
-  }
+    "*.jsx": "eslint --cache --fix",
+    "*.css": "stylelint --fix",
+    "*.scss": "stylelint --fix"
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }

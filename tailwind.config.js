@@ -1,24 +1,18 @@
 const nord = require('tailwind-nord');
 const aspectRatios = require('tailwindcss-aspect-ratio');
 const typography = require('@tailwindcss/typography');
+const customForms = require('@tailwindcss/custom-forms');
 
 module.exports = {
-  purge: [],
+  purge: ['./pages/*.js', './components/*.js'],
   theme: {
     aspectRatio: {
       a4: [210, 297],
     },
-    extend: {
-      width: {
-        viewport: '100vw',
-      },
-      height: {
-        viewport: '100vh',
-      },
-    },
+    extend: {},
   },
   variants: {},
-  plugins: [nord, aspectRatios, typography],
+  plugins: [nord, aspectRatios, typography, customForms],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
