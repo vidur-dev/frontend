@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import PillNavigation from '../components/PillNavigation';
 import styles from '../styles/Home.module.scss';
+import menuItems from '../data/navMenu.json';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
 
       <h1 className={styles.text}>vidur.dev</h1>
 
-      <PillNavigation />
+      <PillNavigation items={menuItems} active="home" />
     </main>
   );
 }

@@ -1,20 +1,28 @@
 import Link from 'next/link';
 
-export default function PillNavigation() {
-  return (
-    <div className="nav">
-      <Link href="/">
-        <a className="button">home</a>
+export default function PillNavigation(props) {
+  const markedItems = props.items.map((item) => {
+    if (item.name === props.active) {
+      const newItem = Object.assign(item);
+      newItem.active = true;
+      return newItem;
+    }
+    return item;
+  });
+  const items = markedItems.map((item) => {
+    if (item.active) {
+      return (
+        <Link href={item.href}>
+          <a className="button active">{item.name}</a>
+        </Link>
+      );
+    }
+    return (
+      <Link href={item.href}>
+        <a className="button">{item.name}</a>
       </Link>
-      <Link href="/about">
-        <a className="button">about</a>
-      </Link>
-      <Link href="/Resume - Vidur Butalia.pdf">
-        <a className="button text-nord7 border-nord7">resume</a>
-      </Link>
-      <Link href="https://github.com/vidurb">
-        <a className="button text-nord8 border-nord8">code</a>
-      </Link>
-    </div>
-  );
+    );
+  });
+
+  return <nav className="nav">{items}</nav>;
 }
