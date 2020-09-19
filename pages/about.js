@@ -1,30 +1,18 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import PillNavigation from '../components/PillNavigation';
 
 export default function About() {
   return (
-    <main className={styles.main}>
+    <main className="flex flex-col justify-center items-center min-h-screen">
       <Head>
         <title>about | vidur.dev</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <h1 className={styles.text}>vidur.dev</h1>
+      <h1 className="text-center">vidur.dev</h1>
 
-      <div className={styles.nav}>
-        <Link href="/">
-          <a className={styles.button}>home</a>
-        </Link>
-        <Link href="/Resume - Vidur Butalia.pdf">
-          <a className={[styles.button, styles.resume].join(' ')}>resume</a>
-        </Link>
-        <Link href="https://github.com/vidurb">
-          <a className={[styles.button, styles.code].join(' ')}>code</a>
-        </Link>
-      </div>
-
-      <p className={styles.text}>
+      <PillNavigation />
+      <p className="text-center">
         This is the personal website of Vidur Butalia.
       </p>
     </main>
