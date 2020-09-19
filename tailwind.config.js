@@ -4,7 +4,7 @@ const typography = require('@tailwindcss/typography');
 const customForms = require('@tailwindcss/custom-forms');
 
 module.exports = {
-  purge: ['./pages/*.js', './components/*.js'],
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   theme: {
     aspectRatio: {
       a4: [210, 297],
