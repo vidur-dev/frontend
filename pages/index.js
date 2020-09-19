@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <h1 className={styles.text}>vidur.dev</h1>
+      <h1 className={styles.title}>vidur.dev</h1>
 
       <PillNavigation items={menuItems} active="home" />
     </main>

@@ -21,11 +21,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-.button {
-  @apply text-center py-1 px-2 mx-2 border-2 rounded border-nord5 border-solid;
-}
-
-.nav {
-  @apply flex flex-row justify-between max-w-sm;
-}

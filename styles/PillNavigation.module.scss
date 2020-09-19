@@ -1,0 +1,20 @@
+.button {
+  @apply py-1 px-2 m-2 border-2 rounded border-nord5 border-solid;
+  @apply text-center text-lg uppercase font-thin;
+}
+
+.active {
+  @apply border-nord3 text-nord3;
+}
+
+.nav {
+  @apply flex flex-row justify-between max-w-sm;
+}
+
+@screen md {
+  @apply py-2 px-2 m-4 border-2;
+}
+
+@screen lg {
+  @apply py-2 px-3 m-6 border-3;
+}
