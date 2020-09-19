@@ -17,5 +17,5 @@ export default function PillNavigation(props) {
     );
   });
 
-  return <nav className="{styles.nav}">{items}</nav>;
+  return <nav className={styles.nav}>{items}</nav>;
 }
