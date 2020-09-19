@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import PillNavigation from '../components/PillNavigation';
+import menuItems from '../data/navMenu.json';
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
 
       <h1 className="text-center">vidur.dev</h1>
 
-      <PillNavigation />
+      <PillNavigation items={menuItems} active="about" />
       <p className="text-center">
         This is the personal website of Vidur Butalia.
       </p>
